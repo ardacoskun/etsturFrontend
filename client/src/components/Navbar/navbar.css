@@ -14,9 +14,11 @@
   justify-content: space-between;
 }
 
-.logo {
+.logo,
+.navLogoIcon {
   font-weight: bold;
   font-size: 25px;
+  margin: 0 1px;
 }
 
 .navButton {

@@ -76,6 +76,10 @@
   color: #fff;
 }
 
+.headerSearchBtn:hover {
+  background-color: #ce3b47;
+}
+
 .date {
   position: absolute;
   top: 50px;
