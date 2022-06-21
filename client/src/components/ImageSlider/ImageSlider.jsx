@@ -1,4 +1,8 @@
-import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCaretLeft,
+  faCaretRight,
+  faCircle,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import "./imageSlider.css";
@@ -25,6 +29,10 @@ const ImageSlider = ({ slides }) => {
     setCurrentIndex(newIndex);
   };
 
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
+
   return (
     <div className="imageSlider">
       <FontAwesomeIcon
@@ -38,6 +46,16 @@ const ImageSlider = ({ slides }) => {
         onClick={goToNext}
       />
       <div style={sliderStyles}></div>
+      <div className="imageSliderDots">
+        {slides.map((slide, index) => (
+          <FontAwesomeIcon
+            key={index}
+            icon={faCircle}
+            className="imageSliderDot"
+            onClick={() => goToSlide(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 };

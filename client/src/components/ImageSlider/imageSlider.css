@@ -24,3 +24,15 @@
   z-index: 1;
   cursor: pointer;
 }
+
+.imageSliderDots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.imageSliderDot {
+  margin: 0 5px;
+  font-size: 10px;
+  cursor: pointer;
+}
