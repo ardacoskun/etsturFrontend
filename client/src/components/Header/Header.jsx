@@ -13,7 +13,7 @@ const Header = () => {
     <div className="header">
       <div className="headerContainer">
         <div className="headerList">
-          <div className="headerListItem">
+          <div className="headerListItem active">
             <FontAwesomeIcon icon={faMusic} />
             <span>Müzik</span>
           </div>
@@ -30,6 +30,12 @@ const Header = () => {
             <span>Resim</span>
           </div>
         </div>
+        <h1 className="headerTitle">
+          Yakınındaki etkinliklerden habersiz kalma
+        </h1>
+        <p className="headerDescription">
+          Eğlence sensiz devam ediyor.Etkinliğini seç ve hayatını yaşamaya başla
+        </p>
       </div>
     </div>
   );
