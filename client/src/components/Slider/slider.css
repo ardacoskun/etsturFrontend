@@ -1,0 +1,17 @@
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.sliderTitle {
+  margin-bottom: 20px;
+}
+
+.imageSliderContainer {
+  width: 60%;
+  height: 450px;
+  margin: 0 auto;
+}
