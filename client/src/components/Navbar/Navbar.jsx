@@ -12,8 +12,8 @@ const Navbar = () => {
           <span className="logo">EventFinder</span>
         </div>
         <div className="navItems">
-          <button className="navButton">Register</button>
-          <button className="navButton">Login</button>
+          <input type="text" className="navItemsSearch" />
+          <button className="navItemsSearchButton">Ara</button>
         </div>
       </div>
     </div>

@@ -26,3 +26,42 @@
   border: none;
   padding: 5px 10px;
 }
+
+.navItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navItemsSearch {
+  width: 300px;
+  padding: 0px 10px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  border-right: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 14px;
+  outline: none;
+  background-color: #fff;
+}
+
+.navItemsSearchButton {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0px 20px;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: 2px solid #fff;
+  border-left: none;
+  color: #fff;
+  font-size: 15px;
+  background-color: #e84855;
+}
+
+.navItemsSearchButton:hover {
+  background-color: #ce3b47;
+}
