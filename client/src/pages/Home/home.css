@@ -1,3 +1,10 @@
 .home {
   background-color: rgb(233, 230, 230);
 }
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 30px;
+}
