@@ -1,8 +1,9 @@
 .header {
-  background-color: #ff99ac;
+  background-color: #e84855;
   color: #fff;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .headerContainer {
@@ -31,4 +32,46 @@
 
 .headerDescription {
   margin: 20px 0px;
+}
+
+.headerSearch {
+  height: 30px;
+  width: 100%;
+  max-width: 1024px;
+  background-color: #fff;
+  border: 3px solid #403f4c;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -25px;
+}
+
+.headerIcon {
+  color: #403f4c;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+}
+
+.headerSearchText {
+  color: #403f4c;
+  cursor: pointer;
+}
+
+.headerSearchBtn {
+  padding: 10px;
+  border: 1px solid #e84855;
+  background-color: #e84855;
+  color: #fff;
 }
