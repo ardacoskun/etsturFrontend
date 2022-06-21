@@ -27,15 +27,18 @@ const CategoryList = () => {
 
   return (
     <div className="categoryList">
-      {categoryList.map((item, index) => (
-        <div className="categoryListItem" key={index}>
-          <img src={item.url} className="categoryListImg" />
-          <div className="categoryListTitles">
-            <h1>{item.title}</h1>
-            <h1>{item.events}</h1>
+      <h1 className="categoryListTitle">Kategoriler</h1>
+      <div className="categoryListContent">
+        {categoryList.map((item, index) => (
+          <div className="categoryListItem" key={index}>
+            <img src={item.url} alt={item.title} className="categoryListImg" />
+            <div className="categoryListTitles">
+              <h1>{item.title}</h1>
+              <h1>{item.events} events</h1>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
