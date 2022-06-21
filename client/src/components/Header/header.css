@@ -75,3 +75,8 @@
   background-color: #e84855;
   color: #fff;
 }
+
+.date {
+  position: absolute;
+  top: 50px;
+}
