@@ -34,7 +34,7 @@ const CategoryList = () => {
             <img src={item.url} alt={item.title} className="categoryListImg" />
             <div className="categoryListTitles">
               <h1>{item.title}</h1>
-              <h1>{item.events} events</h1>
+              <h1>{item.events} etkinlik</h1>
             </div>
           </div>
         ))}

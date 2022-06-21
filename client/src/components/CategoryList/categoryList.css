@@ -25,6 +25,10 @@
   cursor: pointer;
 }
 
+.categoryListItem:hover {
+  opacity: 0.9;
+}
+
 .categoryListImg {
   width: 100%;
   height: 100%;
