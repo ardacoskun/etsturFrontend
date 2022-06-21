@@ -3,5 +3,6 @@ import Header from "./Header/Header";
 import Slider from "./Slider/Slider";
 import CategoryList from "./CategoryList/CategoryList";
 import UpcomingEvents from "./UpcomingEvents/UpcomingEvents";
+import Footer from "./Footer/Footer";
 
-export { Navbar, Header, Slider, CategoryList, UpcomingEvents };
+export { Navbar, Header, Slider, CategoryList, UpcomingEvents, Footer };

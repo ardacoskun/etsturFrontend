@@ -2,6 +2,7 @@ import React from "react";
 import "./home.css";
 import {
   CategoryList,
+  Footer,
   Header,
   Navbar,
   Slider,
@@ -17,6 +18,7 @@ const Home = () => {
         <Slider />
         <CategoryList />
         <UpcomingEvents />
+        <Footer />
       </div>
     </div>
   );
