@@ -61,8 +61,6 @@ const CategoryList = () => {
     return <Loading />;
   }
 
-  console.log(filteredData);
-
   return (
     <div className="categoryList">
       <h1 className="categoryListTitle">Kategoriler</h1>
