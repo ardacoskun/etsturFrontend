@@ -25,7 +25,7 @@ const SingleCategory = () => {
       }
     };
     getData();
-  }, []);
+  }, [categoryName]);
 
   if (loading) {
     return <div>Loading...</div>;
