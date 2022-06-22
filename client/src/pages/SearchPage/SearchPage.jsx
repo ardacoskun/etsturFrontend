@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import "./searchPage.css";
 import { Footer, Header, Navbar } from "../../components";
@@ -9,6 +9,7 @@ const SearchPage = () => {
   const [filteredData, setFilteredData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getData = async () => {
@@ -49,6 +50,9 @@ const SearchPage = () => {
                   src={item.images[0]}
                   alt={item.name}
                   className="searchPageImg"
+                  onClick={() =>
+                    navigate(`/${item.category.toLowerCase()}/${item.id}`)
+                  }
                 />
                 <Link
                   to={`/${item.category.toLowerCase()}/${item.id}`}

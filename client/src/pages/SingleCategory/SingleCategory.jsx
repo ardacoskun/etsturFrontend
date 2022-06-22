@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./singleCategory.css";
 import axios from "axios";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { Footer, Header, Navbar } from "../../components";
 
 const SingleCategory = () => {
@@ -9,6 +9,7 @@ const SingleCategory = () => {
   const [filteredData, setFilteredData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getData = async () => {
@@ -45,6 +46,9 @@ const SingleCategory = () => {
                   src={item.images[0]}
                   alt={item.name}
                   className="singleCategoryImg"
+                  onClick={() =>
+                    navigate(`/${item.category.toLowerCase()}/${item.id}`)
+                  }
                 />
                 <Link
                   to={`/${item.category.toLowerCase()}/${item.id}`}
@@ -53,7 +57,12 @@ const SingleCategory = () => {
                   {item.name}
                 </Link>
 
-                <div className="singleCategoryPlace">{item.location}</div>
+                <Link
+                  to={`/arama/${item.location}`}
+                  className="singleCategoryPlace"
+                >
+                  {item.location}
+                </Link>
                 <div className="singleCategoryDate">{item.date}</div>
               </div>
             ))}

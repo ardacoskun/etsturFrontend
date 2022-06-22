@@ -64,4 +64,10 @@
 .singleCategoryPlace,
 .singleCategoryDate {
   font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+.singleCategoryPlace:hover {
+  color: #e84855;
 }

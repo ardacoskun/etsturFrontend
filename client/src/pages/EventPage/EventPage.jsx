@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 import { EventSlider, Footer, Header, Navbar } from "../../components";
 import "./eventPage.css";
 import Map from "../../components/GoogleMap/Map";
@@ -64,9 +64,12 @@ const EventPage = () => {
                       ))}
                   </ul>
 
-                  <div className="eventPageLocation">
+                  <Link
+                    to={`/arama/${filteredData[0].location}`}
+                    className="eventPageLocation"
+                  >
                     {filteredData[0].location}
-                  </div>
+                  </Link>
                   <div className="eventPageDateContainer">
                     <div className="eventPageDate"> {filteredData[0].date}</div>
                     <div className="eventPageTime"> {filteredData[0].time}</div>
