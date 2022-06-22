@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
 import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Footer, Header, Navbar } from "../../components";
 import "./eventPage.css";
@@ -67,7 +67,7 @@ const EventPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="eventPage Middle">
+              <div className="eventPageMiddle">
                 <div className="eventPageDesc">
                   {" "}
                   {filteredData[0].description}
@@ -84,11 +84,12 @@ const EventPage = () => {
                 </div>
               </div>
               <div className="eventPageBottom">
+                <h2 className="eventPricesTitle">Bilet Fiyatları</h2>
                 <ul className="eventPagePrices">
                   {filteredData[0].price &&
                     Object.values(filteredData[0].price).map((item, index) => (
                       <li className="eventPagePrice" key={index}>
-                        {item}
+                        {item} TL
                       </li>
                     ))}
                 </ul>

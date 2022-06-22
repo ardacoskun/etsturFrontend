@@ -17,3 +17,102 @@
   align-items: flex-start;
   flex-direction: column;
 }
+
+.eventPageTop {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.eventPageImg {
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+  margin-right: 50px;
+}
+
+.eventPageInfo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.eventPageName {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.eventPageArtists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.eventPageLocation {
+  color: #e84855;
+}
+
+.eventPageDateContainer {
+  display: flex;
+  align-items: center;
+}
+
+.eventPageDate {
+  margin: 0 5px;
+  color: #403f4c;
+  font-size: 17px;
+}
+
+.eventPageTime {
+  margin: 0 5px;
+  color: #403f4c;
+  font-size: 17px;
+}
+
+.eventPageMiddle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.eventPageDesc {
+  color: #2c2b30;
+  font-weight: bold;
+}
+
+.eventPageRules {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.eventPageBottom {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.eventPricesTitle {
+  margin-bottom: 10px;
+}
+
+.eventPagePrices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eventPagePrice {
+  margin: 0 20px;
+}
