@@ -17,6 +17,7 @@
     ],
     "startDate": "29.06.2022",
     "endDate": "29.06.2022",
+    "startDateTime": 1656450000000,
     "endDateTime": 1656450000000,
     "time": "21.00",
     "details": [
@@ -44,6 +45,7 @@
     ],
     "startDate": "29.06.2022",
     "endDate": "29.06.2022",
+    "startDateTime": 1656450000000,
     "endDateTime": 1656450000000,
     "time": "21.00",
     "details": [
@@ -70,8 +72,9 @@
       "https://im.haberturk.com/2021/10/15/ver1634328768/3223059_810x458.jpg",
       "https://www.biletix.com/static/images/live/event/eventimages/0IH21_ayta_hk.jpg"
     ],
-    "startDate": "23.06.2022",
+    "startDate": "22.06.2022",
     "endDate": "22.06.2022",
+    "startDateTime": 1655931600000,
     "endDateTime": 1655931600000,
     "time": "20.30",
     "details": [
@@ -99,6 +102,7 @@
     ],
     "startDate": "29.06.2022",
     "endDate": "29.06.2022",
+    "startDateTime": 1656450000000,
     "endDateTime": 1656450000000,
     "time": "22.00",
     "details": [
@@ -126,6 +130,7 @@
     ],
     "startDate": "29.06.2022",
     "endDate": "29.06.2022",
+    "startDateTime": 1656450000000,
     "endDateTime": 1656450000000,
     "time": "20.00",
     "details": [
@@ -152,6 +157,7 @@
     ],
     "startDate": "25.06.2022",
     "endDate": "25.06.2022",
+    "startDateTime": 1656104400000,
     "endDateTime": 1656104400000,
     "time": "22.00",
     "details": [
@@ -179,6 +185,7 @@
     ],
     "startDate": "25.06.2022",
     "endDate": "25.06.2022",
+    "startDateTime": 1656104400000,
     "endDateTime": 1656104400000,
     "time": "21.00",
     "details": [
@@ -206,6 +213,7 @@
     ],
     "startDate": "25.06.2022",
     "endDate": "25.06.2022",
+    "startDateTime": 1656104400000,
     "endDateTime": 1656104400000,
     "time": "21.00",
     "details": [
@@ -229,6 +237,7 @@
     ],
     "startDate": "28.06.2022",
     "endDate": "28.06.2022",
+    "startDateTime": 1656363600000,
     "endDateTime": 1656363600000,
     "time": "21.00",
     "details": [
@@ -249,6 +258,7 @@
     ],
     "startDate": "16.01.2022",
     "endDate": "24.02.2022",
+    "startDateTime": 1642280400000,
     "endDateTime": 1645650000000,
     "time": "17.10.2022",
     "details": [
@@ -298,6 +308,7 @@
     ],
     "startDate": "16.04.2022",
     "endDate": "24.04.2022",
+    "startDateTime": 1650056400000,
     "endDateTime": 1650747600000,
     "time": "10.06.2022",
     "details": [],
@@ -317,6 +328,7 @@
     ],
     "startDate": "30.12.2022",
     "endDate": "30.12.2022",
+    "startDateTime": 1651266000000,
     "endDateTime": 1651266000000,
     "time": "21.00",
     "details": [
@@ -341,6 +353,7 @@
     ],
     "startDate": "12.04.2022",
     "endDate": "13.05.2022",
+    "startDateTime": 1649710800000,
     "endDateTime": 1652389200000,
     "time": "",
     "details": [
@@ -362,6 +375,7 @@
     ],
     "startDate": "12.06.2022",
     "endDate": "30.06.2022",
+    "startDateTime": 1654981200000,
     "endDateTime": 1656536400000,
     "time": "",
     "details": [
@@ -384,6 +398,7 @@
     ],
     "startDate": "11.05.2022",
     "endDate": "14.06.2022",
+    "startDateTime": 1652216400000,
     "endDateTime": 1655154000000,
     "time": "",
     "details": [
@@ -409,6 +424,7 @@
     ],
     "startDate": "13.07.2022",
     "endDate": "13.07.2022",
+    "startDateTime": 1657659600000,
     "endDateTime": 1657659600000,
     "time": "13.00",
     "details": [
@@ -435,6 +451,7 @@
     ],
     "startDate": "14.07.2022",
     "endDate": "14.07.2022",
+    "startDateTime": 1657746000000,
     "endDateTime": 1657746000000,
     "time": "13.00",
     "details": [
@@ -461,6 +478,7 @@
     ],
     "startDate": "16.07.2022",
     "endDate": "16.07.2022",
+    "startDateTime": 1657918800000,
     "endDateTime": 1657918800000,
     "time": "13.00",
     "details": [
@@ -487,6 +505,7 @@
     ],
     "startDate": "17.07.2022",
     "endDate": "17.07.2022",
+    "startDateTime": 1658005200000,
     "endDateTime": 1658005200000,
     "time": "13.00",
     "details": [
@@ -513,6 +532,7 @@
     ],
     "startDate": "23.06.2022",
     "endDate": "12.07.2022",
+    "startDateTime": 1655931600000,
     "endDateTime": 1657573200000,
     "time": "20.00",
     "details": [
@@ -547,6 +567,7 @@
     ],
     "startDate": "23.06.2022",
     "endDate": "12.07.2022",
+    "startDateTime": 1655931600000,
     "endDateTime": 1657573200000,
     "time": "20.00",
     "details": [
@@ -573,6 +594,7 @@
     ],
     "startDate": "04.01.2022",
     "endDate": "04.01.2022",
+    "startDateTime": 1641243600000,
     "endDateTime": 1641243600000,
     "time": "20.00",
     "details": [],
@@ -604,6 +626,7 @@
     ],
     "startDate": "22.06.2022",
     "endDate": "22.06.2022",
+    "startDateTime": 1655845200000,
     "endDateTime": 1655845200000,
     "time": "21.00",
     "details": [],

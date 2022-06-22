@@ -5,6 +5,7 @@ import {
   Home,
   PastEvents,
   SearchPage,
+  SearchToDate,
   SingleCategory,
 } from "./pages";
 
@@ -19,6 +20,10 @@ const App = () => {
         <Route
           path="/gecmis-etkinlikler/:endDateTime"
           element={<PastEvents />}
+        />
+        <Route
+          path="/etkinlik-bul/:location/:startDateTime/:endDateTime"
+          element={<SearchToDate />}
         />
       </Routes>
     </BrowserRouter>

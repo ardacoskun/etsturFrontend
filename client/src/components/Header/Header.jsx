@@ -7,6 +7,7 @@ import {
   faFutbolBall,
   faLocationDot,
   faCalendarDays,
+  faFolder,
 } from "@fortawesome/free-solid-svg-icons";
 import { DateRange } from "react-date-range";
 import "./header.css";
@@ -25,12 +26,23 @@ const Header = ({ type }) => {
       key: "selection",
     },
   ]);
+  const [location, setLocation] = useState("");
+  const [error, setError] = useState("");
 
   let startEvent = date[0].startDate.getTime();
   let endEvent = date[0].startDate.getTime();
 
-  const handleClick = () => {
-    navigate(`/etkinlik-bul/${startEvent}/${endEvent}`);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (location === "") {
+      setError("Lütfen konum giriniz.");
+      return;
+    }
+
+    navigate(
+      `/etkinlik-bul/${location.toLowerCase()}/${startEvent}/${endEvent}`
+    );
   };
 
   return (
@@ -58,7 +70,7 @@ const Header = ({ type }) => {
             to={`/gecmis-etkinlikler/${endEvent}`}
             className="headerListItem"
           >
-            <FontAwesomeIcon icon={faPalette} />
+            <FontAwesomeIcon icon={faFolder} />
             <span>Geçmiş Etkinlikler</span>
           </Link>
         </div>
@@ -76,8 +88,11 @@ const Header = ({ type }) => {
                 <FontAwesomeIcon icon={faLocationDot} className="headerIcon" />
                 <input
                   type="text"
-                  placeholder="Konum giriniz..."
+                  placeholder={error ? error : "Konum giriniz..."}
                   className="headerSearchInput"
+                  required
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
                 />
               </div>
               <div className="headerSearchItem">
@@ -100,7 +115,11 @@ const Header = ({ type }) => {
                 )}
               </div>
               <div className="headerSearchItem">
-                <button className="headerSearchBtn" onClick={handleClick}>
+                <button
+                  className="headerSearchBtn"
+                  onClick={handleSubmit}
+                  type="submit"
+                >
                   Etkinlik Bul
                 </button>
               </div>
