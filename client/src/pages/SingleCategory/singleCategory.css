@@ -71,3 +71,9 @@
 .singleCategoryPlace:hover {
   color: #e84855;
 }
+
+.searchPageDateLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

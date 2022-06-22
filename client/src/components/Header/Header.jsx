@@ -30,7 +30,7 @@ const Header = ({ type }) => {
   const [error, setError] = useState("");
 
   let startEvent = date[0].startDate.getTime();
-  let endEvent = date[0].startDate.getTime();
+  let endEvent = date[0].endDate.getTime();
 
   const handleSubmit = (e) => {
     e.preventDefault();

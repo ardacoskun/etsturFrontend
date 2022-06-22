@@ -5,6 +5,7 @@
     "artist": ["Tarkan"],
     "category": "Müzik",
     "location": "Cemil Topuzlu Açık Hava Tiyatrosu",
+    "city": "İstanbul",
     "price": {
       "A": 1000,
       "B": 750,
@@ -33,6 +34,7 @@
     "artist": ["Mabel Matiz"],
     "category": "Müzik",
     "location": "Cemil Topuzlu Açık Hava Tiyatrosu",
+    "city": "İstanbul",
     "price": {
       "A": 600,
       "B": 400,
@@ -61,6 +63,7 @@
     "artist": ["Ayta Sözeri"],
     "category": "Müzik",
     "location": "Datça Açık Hava Tiyatrosu",
+    "city": "Datça",
     "price": {
       "A": 300,
       "B": 250,
@@ -74,8 +77,8 @@
     ],
     "startDate": "22.06.2022",
     "endDate": "22.06.2022",
-    "startDateTime": 1655931600000,
-    "endDateTime": 1655931600000,
+    "startDateTime": 1655845200000,
+    "endDateTime": 1655845200000,
     "time": "20.30",
     "details": [
       "Etkinlikte 18 yaş sınırı vardır.",
@@ -91,6 +94,7 @@
     "artist": ["Cenk Durmazel", "Barış Ertunç", "Cenk Turanlı"],
     "category": "Müzik",
     "location": "IF Performance Hall Beşiktaş",
+    "city": "İstanbul",
     "price": {
       "A": 100,
       "B": 75,
@@ -118,6 +122,7 @@
     "artist": ["Haktan"],
     "category": "Müzik",
     "location": "Jolly Joker Kıyı İstanbul",
+    "city": "İstanbul",
     "price": {
       "A": 100,
       "B": 75,
@@ -146,6 +151,7 @@
     "artist": ["Yeni Türkü"],
     "category": "Müzik",
     "location": "Cemil Topuzlu Açık Hava Tiyatrosu",
+    "city": "İstanbul",
     "price": {
       "A": 100,
       "B": 75,
@@ -173,6 +179,7 @@
     "artist": ["Uğurhan Özay", "Mürsel Oğulcan Ava"],
     "category": "Müzik",
     "location": "KüçükÇiftlik Park",
+    "city": "İstanbul",
     "price": {
       "A": 100,
       "B": 75,
@@ -201,6 +208,7 @@
     "artist": ["Selçuk Yöntem", "Okan Bayülgen", "Özlem Öçalmaz"],
     "category": "Tiyatro",
     "location": "Zorlu PSM - Turkcell Sahnesi",
+    "city": "İstanbul",
     "price": {
       "A": 100,
       "B": 75,
@@ -228,6 +236,7 @@
     "artist": ["Selçuk Yöntem", "Okan Bayülgen", "Özlem Öçalmaz"],
     "category": "Tiyatro",
     "location": "Zorlu PSM - Turkcell Sahnesi",
+    "city": "İstanbul",
     "price": {
       "A": "300",
       "B": "150"
@@ -252,6 +261,7 @@
     "artist": ["Bruno Vandermeulen", "Danny Veys"],
     "category": "Resim",
     "location": "Cemil Topuzlu Açık Hava Tiyatrosu",
+    "city": "İstanbul",
     "price": {},
     "images": [
       "https://anamed.ku.edu.tr/wp-content/uploads/2022/02/TW-2048x688.jpg"
@@ -272,6 +282,7 @@
     "artist": [],
     "category": "Resim",
     "location": "Pera Müzesi",
+    "city": "İstanbul",
     "price": {
       "A": 25,
       "B": 10,
@@ -300,6 +311,7 @@
     "artist": ["Can Özal"],
     "category": "Resim",
     "location": "One Arc Gallery ",
+    "city": "İstanbul",
     "price": {
       "A": 50
     },
@@ -319,7 +331,8 @@
     "name": "Cazzip Project",
     "artist": ["Aslı Özer", "Eren Turgut", "Ertuğrul Biber"],
     "category": "Müzik",
-    "location": "wwww.sahneport.com",
+    "location": "Online",
+    "city": "",
     "price": {
       "A": "45"
     },
@@ -347,6 +360,7 @@
     "artist": ["Suzan Pektaş"],
     "category": "Resim",
     "location": "Barın Han",
+    "city": "İstanbul",
     "price": {},
     "images": [
       "https://www.oggusto.com/UserFiles/Image/images/May%C4%B1s%202022/naomi-sergisi.jpg"
@@ -367,6 +381,7 @@
     "artist": ["Refik Anadol"],
     "category": "Resim",
     "location": "Atatürk Kültür Merkezi",
+    "city": "İstanbul",
     "price": {
       "A": "10"
     },
@@ -389,6 +404,7 @@
     "artist": ["Murat Önen", "Sonja Yakovleva", "Metehan Törer", "Serra Duran"],
     "category": "Resim",
     "location": "Martch Art Project",
+    "city": "İstanbul",
     "price": {
       "A": "100",
       "B": "50"
@@ -412,6 +428,7 @@
     "artist": [],
     "category": "Spor",
     "location": "Ankara - Ankara Spor Salonu",
+    "city": "Ankara",
     "price": {
       "A": "1200",
       "B": "600",
@@ -439,6 +456,7 @@
     "artist": [],
     "category": "Spor",
     "location": "Ankara - Ankara Spor Salonu",
+    "city": "Ankara",
     "price": {
       "A": "1200",
       "B": "600",
@@ -466,6 +484,7 @@
     "artist": [],
     "category": "Spor",
     "location": "Ankara - Ankara Spor Salonu",
+    "city": "Ankara",
     "price": {
       "A": "1200",
       "B": "600",
@@ -493,6 +512,7 @@
     "artist": [],
     "category": "Spor",
     "location": "Ankara - Ankara Spor Salonu",
+    "city": "Ankara",
     "price": {
       "A": "1200",
       "B": "600",
@@ -520,6 +540,7 @@
     "artist": [" Filiz Bozkuş Al", "Kerem Al", "Uygar Erkuş", "Aynur Kök"],
     "category": "Tiyatro",
     "location": "Ankara - Farabi Sahnesi",
+    "city": "Ankara",
     "price": {
       "A": "1200",
       "B": "600",
@@ -559,6 +580,7 @@
     ],
     "category": "Tiyatro",
     "location": "İzmir - İzmir Üçyol Hayal Oda Sahnesi",
+    "city": "İzmir",
     "price": {
       "A": "60"
     },
@@ -586,6 +608,7 @@
     "artist": ["Seda Yüz"],
     "category": "Tiyatro",
     "location": "İstanbul - Gri Sahne",
+    "city": "İstanbul",
     "price": {
       "A": "100"
     },
@@ -618,6 +641,7 @@
     ],
     "category": "Tiyatro",
     "location": "HARBİYE CEMİL TOPUZLU AÇIKHAVA TİYATROSU",
+    "city": "İstanbul",
     "price": {
       "A": "100"
     },

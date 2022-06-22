@@ -1,0 +1,79 @@
+.searchToDate {
+  background-color: rgb(233, 230, 230);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchToDateContainer {
+  width: 100%;
+  height: 100%;
+  max-width: 1024px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: flex-start;
+
+  flex-direction: column;
+}
+
+.searchToDateText {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.searchToDateListContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.searchToDateEventContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 120px;
+  border: 2px solid #e84855;
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.searchToDateImg {
+  width: 200px;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.searchToDateName {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+.searchToDateName:hover {
+  color: #e84855;
+}
+
+.searchToDatePlace,
+.searchToDateDate {
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+.searchToDatePlace:hover {
+  color: #e84855;
+}
+
+.searchToDateDateLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

@@ -62,7 +62,11 @@ const SearchPage = () => {
                 </Link>
 
                 <div className="searchPagePlace">{item.location}</div>
-                <div className="searchPageDate">{item.startDate}</div>
+
+                <div className="searchPageDateLinks">
+                  <div className="searchPageDate">{item.startDate} -</div>
+                  <div className="searchPageDate">{item.endDate}</div>
+                </div>
               </div>
             ))}
           </div>
