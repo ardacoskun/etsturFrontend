@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./singleCategory.css";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Footer, Header, Navbar } from "../../components";
 
 const SingleCategory = () => {
@@ -46,7 +46,12 @@ const SingleCategory = () => {
                   alt={item.name}
                   className="singleCategoryImg"
                 />
-                <div className="singleCategoryName">{item.name}</div>
+                <Link
+                  to={`/${item.category.toLowerCase()}/${item.id}`}
+                  className="singleCategoryName"
+                >
+                  {item.name}
+                </Link>
 
                 <div className="singleCategoryPlace">{item.location}</div>
                 <div className="singleCategoryDate">{item.date}</div>

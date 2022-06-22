@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, SingleCategory } from "./pages";
+import { EventPage, Home, SingleCategory } from "./pages";
 
 const App = () => {
   return (
@@ -8,6 +8,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/:categoryName" element={<SingleCategory />}></Route>
+        <Route path="/:categoryName/:id" element={<EventPage />}></Route>
       </Routes>
     </BrowserRouter>
   );
