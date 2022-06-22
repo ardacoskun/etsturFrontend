@@ -1,0 +1,27 @@
+.eventSlider {
+  height: 300px;
+  width: 400px;
+  position: relative;
+  flex: 1;
+}
+.eventSliderLeftArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 45px;
+  left: 32px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.eventSliderRightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 32px;
+  font-size: 45px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}

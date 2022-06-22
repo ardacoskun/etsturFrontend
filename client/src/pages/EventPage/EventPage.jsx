@@ -1,9 +1,10 @@
 import axios from "axios";
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Footer, Header, Navbar } from "../../components";
+import { EventSlider, Footer, Header, Navbar } from "../../components";
 import "./eventPage.css";
 import Map from "../../components/GoogleMap/Map";
+
 const EventPage = () => {
   const { categoryName, id } = useParams();
   const [filteredData, setFilteredData] = useState([]);
@@ -11,7 +12,7 @@ const EventPage = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    const fetchReq = async () => {
+    const getData = async () => {
       try {
         setLoading(true);
         const { data } = await axios.get("/events.json");
@@ -25,7 +26,7 @@ const EventPage = () => {
         console.log("Bir hata oluştu! Lütfen daha sonra tekrar deneyin");
       }
     };
-    fetchReq();
+    getData();
   }, [categoryName, id]);
 
   if (loading) {
@@ -41,11 +42,16 @@ const EventPage = () => {
           {filteredData[0] && (
             <>
               <div className="eventPageTop">
-                <img
-                  src={filteredData[0].images[0]}
-                  alt={filteredData[0].name}
-                  className="eventPageImg"
-                />
+                {filteredData[0].images.length > 1 ? (
+                  <EventSlider images={filteredData[0].images} />
+                ) : (
+                  <img
+                    src={filteredData[0].images[0]}
+                    alt={filteredData[0].name}
+                    className="eventPageImg"
+                  />
+                )}
+
                 <div className="eventPageInfo">
                   <div className="eventPageName">{filteredData[0].name}</div>
 
