@@ -11,13 +11,17 @@ const SingleCategory = () => {
   const [error, setError] = useState(false);
   const navigate = useNavigate();
 
+  let currentTime = new Date().getTime();
+
   useEffect(() => {
     const getData = async () => {
       try {
         setLoading(true);
         const { data } = await axios.get("./events.json");
         const filtered = data.filter(
-          (item) => item.category.toLowerCase() === categoryName
+          (item) =>
+            item.category.toLowerCase() === categoryName &&
+            item.endDateTime > currentTime
         );
         setFilteredData(filtered);
         setLoading(false);

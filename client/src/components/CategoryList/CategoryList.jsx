@@ -30,28 +30,38 @@ const categoryList = [
 const CategoryList = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-  const [filteredData, setFilteredData] = useState({});
+  let map = {};
+  const [filteredData, setFilteredData] = useState();
 
   useEffect(() => {
-    const getData = async () => {
-      try {
-        setLoading(true);
-        const { data } = await axios.get("./events.json");
-        const filtered = data.filter(
-          (item) => item.category.toLowerCase() === "müzik"
-        );
-        setFilteredData(filtered);
-        setLoading(false);
-      } catch (error) {
-        setError("Bir hata oluştu! Lütfen daha sonra tekrar deneyin");
-      }
-    };
     getData();
   }, []);
+
+  const getData = async () => {
+    try {
+      setLoading(true);
+      const { data } = await axios.get("./events.json");
+
+      for (let element of data) {
+        if (map[element.category.toLowerCase()]) {
+          map[element.category.toLowerCase()]++;
+        } else {
+          map[element.category.toLowerCase()] = 1;
+        }
+        setFilteredData(map);
+      }
+
+      setLoading(false);
+    } catch (error) {
+      setError("Bir hata oluştu! Lütfen daha sonra tekrar deneyin");
+    }
+  };
 
   if (loading) {
     return <Loading />;
   }
+
+  console.log(filteredData);
 
   return (
     <div className="categoryList">
@@ -66,7 +76,6 @@ const CategoryList = () => {
             <img src={item.url} alt={item.title} className="categoryListImg" />
             <div className="categoryListTitles">
               <h1>{item.title}</h1>
-              <h1>{filteredData.length} etkinlik</h1>
             </div>
           </Link>
         ))}
