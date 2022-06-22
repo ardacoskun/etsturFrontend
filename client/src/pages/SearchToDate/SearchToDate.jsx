@@ -19,6 +19,7 @@ const SearchToDate = () => {
 
         const filtered = data.filter(
           (item) =>
+            item.city.toString().toLowerCase() === location.toLowerCase() &&
             item.startDateTime >= startDateTime &&
             item.endDateTime <= endDateTime
         );
