@@ -49,7 +49,7 @@ const Header = ({ type }) => {
     <div className="header">
       <div className={`headerContainer ${type === "home" && "headerHome"}`}>
         <div className="headerList">
-          <Link to="/müzik" className="headerListItem active">
+          <Link to="/müzik" className="headerListItem ">
             <FontAwesomeIcon icon={faMusic} />
             <span>Müzik</span>
           </Link>

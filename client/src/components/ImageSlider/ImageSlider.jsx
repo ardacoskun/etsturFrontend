@@ -11,7 +11,7 @@ const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const sliderStyles = {
-    backgroundImage: `url(${slides[currentIndex].url})`,
+    backgroundImage: `url(${slides[currentIndex]?.images[0]})`,
     width: "100%",
     height: "100%",
     borderRadius: "10px",
