@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 
 const containerStyle = {
   width: "400px",
@@ -37,6 +37,7 @@ const Map = () => {
       onLoad={onLoad}
       onUnmount={onUnmount}
     >
+      <Marker position={center} />
       <></>
     </GoogleMap>
   ) : (
