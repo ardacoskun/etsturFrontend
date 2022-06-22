@@ -32,13 +32,33 @@ const SingleCategory = () => {
   }
 
   return (
-    <div className="singleCategory">
+    <>
       <Navbar />
       <Header />
-      {filteredData.map((item, index) => (
-        <div key={index}>{item.name}</div>
-      ))}
-    </div>
+      <div className="singleCategory">
+        <div className="singleCategoryContainer">
+          <div className="singleCategoryText">{`${filteredData.length} sonuç bulundu.`}</div>
+          <div className="singleCategoryListContainer">
+            {filteredData.map((item, index) => (
+              <div className="singleCategoryEventContainer">
+                <div className="singleCategoryEventLeft">
+                  <img
+                    src={item.images[0]}
+                    alt={item.name}
+                    className="singleCategoryImg"
+                  />
+                  <div className="singleCategoryName">{item.name}</div>
+                </div>
+                <div className="singleCategoryEventRight">
+                  <div className="singleCategoryPlace">{item.location}</div>
+                  <div className="singleCategoryDate">{item.date}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
