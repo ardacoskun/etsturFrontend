@@ -71,3 +71,9 @@
 .pastEventsPlace:hover {
   color: #e84855;
 }
+
+.pastEventsDateLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

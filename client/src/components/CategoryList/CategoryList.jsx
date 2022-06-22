@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./categoryList.css";
@@ -26,19 +27,30 @@ const categoryList = [
 ];
 
 const CategoryList = () => {
-  let categoryFilter = {};
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+  const [filteredData, setFilteredData] = useState({});
 
-  // const eventCount = () => {
-  //   for (let element of events) {
-  //     if (categoryFilter[element.category.toLowerCase()]) {
-  //       categoryFilter[element.category.toLowerCase()]++;
-  //     } else {
-  //       categoryFilter[element.category.toLowerCase()] = 1;
-  //     }
-  //   }
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        setLoading(true);
+        const { data } = await axios.get("./events.json");
+        const filtered = data.filter(
+          (item) => item.category.toLowerCase() === "müzik"
+        );
+        setFilteredData(filtered);
+        setLoading(false);
+      } catch (error) {
+        setError("Bir hata oluştu! Lütfen daha sonra tekrar deneyin");
+      }
+    };
+    getData();
+  }, []);
 
-  //   return categoryFilter;
-  // };
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="categoryList">
@@ -53,7 +65,7 @@ const CategoryList = () => {
             <img src={item.url} alt={item.title} className="categoryListImg" />
             <div className="categoryListTitles">
               <h1>{item.title}</h1>
-              <h1>{categoryFilter.item} etkinlik</h1>
+              <h1>{filteredData.length} etkinlik</h1>
             </div>
           </Link>
         ))}

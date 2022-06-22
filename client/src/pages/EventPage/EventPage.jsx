@@ -23,7 +23,7 @@ const EventPage = () => {
         setFilteredData(filtered);
         setLoading(false);
       } catch (error) {
-        console.log("Bir hata oluştu! Lütfen daha sonra tekrar deneyin");
+        setError("Bir hata oluştu! Lütfen daha sonra tekrar deneyin");
       }
     };
     getData();

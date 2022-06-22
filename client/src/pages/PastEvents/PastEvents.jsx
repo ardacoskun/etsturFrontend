@@ -18,9 +18,8 @@ const PastEvents = () => {
       try {
         setLoading(true);
         const { data } = await axios.get("/events.json");
-        const filtered = data.filter((item) => item.endDateTime < currentTime);
+        const filtered = data.filter((item) => item.endDateTime <= currentTime);
         setFilteredData(filtered);
-        console.log(filtered);
         setLoading(false);
       } catch (error) {
         setError("Bir hata oluştu! Lütfen daha sonra tekrar deneyin");
@@ -64,7 +63,10 @@ const PastEvents = () => {
                 >
                   {item.location}
                 </Link>
-                <div className="pastEventsDate">{item.startDate}</div>
+                <div className="pastEventsDateLinks">
+                  <div className="pastEventsDate">{item.startDate} -</div>
+                  <div className="pastEventsDate">{item.endDate}</div>
+                </div>
               </div>
             ))}
           </div>
