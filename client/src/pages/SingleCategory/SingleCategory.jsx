@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./singleCategory.css";
 import axios from "axios";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { Footer, Header, Navbar } from "../../components";
+import { Footer, Header, Loading, Navbar } from "../../components";
 
 const SingleCategory = () => {
   const { categoryName } = useParams();
@@ -29,7 +29,7 @@ const SingleCategory = () => {
   }, [categoryName]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   return (

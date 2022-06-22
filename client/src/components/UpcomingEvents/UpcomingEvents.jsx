@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Loading from "../Loading/Loading";
 import "./upcomingEvents.css";
 
 const UpcomingEvents = () => {
@@ -32,7 +33,7 @@ const UpcomingEvents = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   return (

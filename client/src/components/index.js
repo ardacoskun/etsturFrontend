@@ -5,6 +5,7 @@ import CategoryList from "./CategoryList/CategoryList";
 import UpcomingEvents from "./UpcomingEvents/UpcomingEvents";
 import Footer from "./Footer/Footer";
 import EventSlider from "./EventSlider/EventSlider";
+import Loading from "./Loading/Loading";
 
 export {
   Navbar,
@@ -14,4 +15,5 @@ export {
   UpcomingEvents,
   Footer,
   EventSlider,
+  Loading,
 };

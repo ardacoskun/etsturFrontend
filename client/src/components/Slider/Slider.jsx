@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import ImageSlider from "../ImageSlider/ImageSlider";
+import Loading from "../Loading/Loading";
 import "./slider.css";
 
 const Slider = () => {
@@ -23,7 +24,7 @@ const Slider = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   return (

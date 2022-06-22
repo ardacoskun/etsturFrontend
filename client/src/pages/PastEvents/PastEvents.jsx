@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { Footer, Header, Navbar } from "../../components";
+import { Footer, Header, Loading, Navbar } from "../../components";
 import "./pastEvents.css";
 
 const PastEvents = () => {
@@ -29,7 +29,7 @@ const PastEvents = () => {
   }, [startDate, endDate]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   return (

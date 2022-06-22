@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import "./searchPage.css";
-import { Footer, Header, Navbar } from "../../components";
+import { Footer, Header, Loading, Navbar } from "../../components";
 
 const SearchPage = () => {
   const { keyword } = useParams();
@@ -33,7 +33,7 @@ const SearchPage = () => {
   }, [keyword]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   return (

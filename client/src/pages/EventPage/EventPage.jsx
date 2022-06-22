@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link, Navigate, useParams } from "react-router-dom";
-import { EventSlider, Footer, Header, Navbar } from "../../components";
+import { Link, useParams } from "react-router-dom";
+import { EventSlider, Footer, Header, Loading, Navbar } from "../../components";
 import "./eventPage.css";
 import Map from "../../components/GoogleMap/Map";
 
@@ -30,7 +30,7 @@ const EventPage = () => {
   }, [categoryName, id]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   return (

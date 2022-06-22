@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { Footer, Header, Navbar } from "../../components";
+import { Footer, Header, Loading, Navbar } from "../../components";
 import "./searchToDate.css";
 
 const SearchToDate = () => {
@@ -33,7 +33,7 @@ const SearchToDate = () => {
   }, [location, startDateTime, endDateTime]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   return (
