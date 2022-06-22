@@ -96,11 +96,24 @@
 }
 
 .eventPageBottom {
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.eventPageBottomLeft {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  margin-right: 50px;
+}
+
+.eventPageBottomRight {
+  width: 400px;
+  height: 400px;
+  margin-left: 10px;
 }
 
 .eventPricesTitle {
@@ -111,6 +124,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .eventPagePrice {

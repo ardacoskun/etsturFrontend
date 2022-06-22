@@ -1,9 +1,9 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import { Footer, Header, Navbar } from "../../components";
 import "./eventPage.css";
-
+import Map from "../../components/GoogleMap/Map";
 const EventPage = () => {
   const { categoryName, id } = useParams();
   const [filteredData, setFilteredData] = useState([]);
@@ -84,15 +84,22 @@ const EventPage = () => {
                 </div>
               </div>
               <div className="eventPageBottom">
-                <h2 className="eventPricesTitle">Bilet Fiyatları</h2>
-                <ul className="eventPagePrices">
-                  {filteredData[0].price &&
-                    Object.values(filteredData[0].price).map((item, index) => (
-                      <li className="eventPagePrice" key={index}>
-                        {item} TL
-                      </li>
-                    ))}
-                </ul>
+                <div className="eventPageBottomLeft">
+                  <h2 className="eventPricesTitle">Bilet Fiyatları</h2>
+                  <ul className="eventPagePrices">
+                    {filteredData[0].price &&
+                      Object.values(filteredData[0].price).map(
+                        (item, index) => (
+                          <li className="eventPagePrice" key={index}>
+                            {item} TL
+                          </li>
+                        )
+                      )}
+                  </ul>
+                </div>
+                <div className="eventPageBottomRight">
+                  <Map />
+                </div>
               </div>
               <div className="eventPageShare"></div>
             </>
