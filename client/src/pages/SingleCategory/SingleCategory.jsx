@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./singleCategory.css";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import { Header, Navbar } from "../../components";
 
 const SingleCategory = () => {
   const { categoryName } = useParams();
@@ -31,7 +32,9 @@ const SingleCategory = () => {
   }
 
   return (
-    <div>
+    <div className="singleCategory">
+      <Navbar />
+      <Header />
       {filteredData.map((item, index) => (
         <div key={index}>{item.name}</div>
       ))}
