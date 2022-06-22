@@ -93,14 +93,17 @@ const EventPage = () => {
                 <div className="eventPageBottomLeft">
                   <h2 className="eventPricesTitle">Bilet Fiyatları</h2>
                   <ul className="eventPagePrices">
-                    {filteredData[0].price &&
+                    {filteredData[0].price.A ? (
                       Object.values(filteredData[0].price).map(
                         (item, index) => (
                           <li className="eventPagePrice" key={index}>
                             {item} TL
                           </li>
                         )
-                      )}
+                      )
+                    ) : (
+                      <div className="eventInfoText">Etkinlik ücretsizdir</div>
+                    )}
                   </ul>
                 </div>
                 <div className="eventPageBottomRight">

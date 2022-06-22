@@ -131,3 +131,8 @@
 .eventPagePrice {
   margin: 0 20px;
 }
+
+.eventInfoText {
+  font-weight: bold;
+  color: #e84855;
+}
