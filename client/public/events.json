@@ -1,0 +1,225 @@
+[
+  {
+    "id": 1,
+    "name": "Tarkan",
+    "artist": ["Tarkan"],
+    "category": "Müzik",
+    "location": "Cemil Topuzlu Açık Hava Tiyatrosu",
+    "price": {
+      "A": 100,
+      "B": 75,
+      "C": 50,
+      "D": 25
+    },
+    "images": [
+      "https://isbh.tmgrup.com.tr/sbh/2016/09/03/650x344/1472931590836.jpg",
+      "https://cdnuploads.aa.com.tr/uploads/Contents/2019/08/13/thumbs_b_c_faf1a87413d02af07d9cdfaba7a2d1fe.jpg"
+    ],
+    "date": "29.06.2022",
+    "time": "21.00",
+    "details": [
+      "8 yaşından küçükler giremez, büyükler bilete tabidir.",
+      " Katılımcılar/izleyiciler COVID-19 kapsamında alınan kurallara uymalıdır.",
+      "Etkinlik girişinde bilet kontrolü yapılacaktır, biletinizi telefondan göstermeniz gerekmektedir."
+    ],
+    "description": "Tarkan 6 yıl aradan sonra sevenleriyle buluşuyor."
+  },
+  {
+    "id": 2,
+    "name": "Mabel Matiz",
+    "artist": ["Mabel Matiz"],
+    "category": "Müzik",
+    "location": "Cemil Topuzlu Açık Hava Tiyatrosu",
+    "price": {
+      "A": 100,
+      "B": 75,
+      "C": 50,
+      "D": 25
+    },
+    "images": [
+      "https://isbh.tmgrup.com.tr/sbh/2016/09/03/650x344/1472931590836.jpg",
+      "https://cdnuploads.aa.com.tr/uploads/Contents/2019/08/13/thumbs_b_c_faf1a87413d02af07d9cdfaba7a2d1fe.jpg"
+    ],
+    "date": "29.06.2022",
+    "time": "21.00",
+    "details": [
+      "8 yaşından küçükler giremez, büyükler bilete tabidir.",
+      " Katılımcılar/izleyiciler COVID-19 kapsamında alınan kurallara uymalıdır.",
+      "Etkinlik girişinde bilet kontrolü yapılacaktır, biletinizi telefondan göstermeniz gerekmektedir."
+    ],
+    "description": "Tarkan 6 yıl aradan sonra sevenleriyle buluşuyor."
+  },
+  {
+    "id": 3,
+    "name": "Ayta Sözeri",
+    "artist": ["Ayta Sözeri"],
+    "category": "Müzik",
+    "location": "Datça Açık Hava Tiyatrosu",
+    "price": {
+      "A": 100,
+      "B": 75,
+      "C": 50,
+      "D": 25
+    },
+    "images": [
+      "https://isbh.tmgrup.com.tr/sbh/2016/09/03/650x344/1472931590836.jpg",
+      "https://cdnuploads.aa.com.tr/uploads/Contents/2019/08/13/thumbs_b_c_faf1a87413d02af07d9cdfaba7a2d1fe.jpg"
+    ],
+    "date": "23.06.2022",
+    "time": "20.30",
+    "details": [
+      "8 yaşından küçükler giremez, büyükler bilete tabidir.",
+      " Katılımcılar/izleyiciler COVID-19 kapsamında alınan kurallara uymalıdır.",
+      "Etkinlik girişinde bilet kontrolü yapılacaktır, biletinizi telefondan göstermeniz gerekmektedir."
+    ],
+    "description": "Ayta Sözeri, 23 Haziran'da Datça Açıkhava Tiyatrosu'nda sizlerle olacak."
+  },
+  {
+    "id": 4,
+    "name": "Malt",
+    "artist": ["Cenk Durmazel", "Barış Ertunç", "Cenk Turanlı"],
+    "category": "Müzik",
+    "location": "IF Performance Hall Beşiktaş",
+    "price": {
+      "A": 100,
+      "B": 75,
+      "C": 50,
+      "D": 25
+    },
+    "images": [
+      "https://isbh.tmgrup.com.tr/sbh/2016/09/03/650x344/1472931590836.jpg",
+      "https://cdnuploads.aa.com.tr/uploads/Contents/2019/08/13/thumbs_b_c_faf1a87413d02af07d9cdfaba7a2d1fe.jpg"
+    ],
+    "date": "29.06.2022",
+    "time": "21.00",
+    "details": [
+      "18 yaş sınırı vardır. 18 yaş altı giremez.",
+      " Katılımcılar/izleyiciler COVID-19 kapsamında alınan kurallara uymalıdır.",
+      "Etkinlik girişinde bilet kontrolü yapılacaktır, biletinizi telefondan göstermeniz gerekmektedir."
+    ],
+    "description": "Cenk Durmazel, Barış Ertunç ve Cenk Turanlı’dan oluşan Malt, aralarına Kurban grubundan Burak Gürpınar’ı da alarak 6 yıl aradan sonra konserlerine devam ediyor."
+  },
+  {
+    "id": 5,
+    "name": "Haktan",
+    "artist": ["Haktan"],
+    "category": "Müzik",
+    "location": "Jolly Joker Kıyı İstanbul",
+    "price": {
+      "A": 100,
+      "B": 75,
+      "C": 50,
+      "D": 25
+    },
+    "images": [
+      "https://isbh.tmgrup.com.tr/sbh/2016/09/03/650x344/1472931590836.jpg",
+      "https://cdnuploads.aa.com.tr/uploads/Contents/2019/08/13/thumbs_b_c_faf1a87413d02af07d9cdfaba7a2d1fe.jpg"
+    ],
+    "date": "29.06.2022",
+    "time": "21.00",
+    "details": [
+      "8 yaşından küçükler giremez, büyükler bilete tabidir.",
+      " Katılımcılar/izleyiciler COVID-19 kapsamında alınan kurallara uymalıdır.",
+      "Etkinlik girişinde bilet kontrolü yapılacaktır, biletinizi telefondan göstermeniz gerekmektedir."
+    ],
+    "description": "Haktan,22 haziran çarşamba akşamı Jolly Joker Kıyı İstanbul sahne'sinde.Sınırlı sayıda Avantajlı Dönem biletlerini kaçırmayın !"
+  },
+  {
+    "id": 6,
+    "name": "Yeni Türkü",
+    "artist": ["Yeni Türkü"],
+    "category": "Müzik",
+    "location": "Cemil Topuzlu Açık Hava Tiyatrosu",
+    "price": {
+      "A": 100,
+      "B": 75,
+      "C": 50,
+      "D": 25
+    },
+    "images": [
+      "https://isbh.tmgrup.com.tr/sbh/2016/09/03/650x344/1472931590836.jpg",
+      "https://cdnuploads.aa.com.tr/uploads/Contents/2019/08/13/thumbs_b_c_faf1a87413d02af07d9cdfaba7a2d1fe.jpg"
+    ],
+    "date": "25.06.2022",
+    "time": "22.00",
+    "details": [
+      "8 yaşından küçükler giremez, büyükler bilete tabidir.",
+      " Katılımcılar/izleyiciler COVID-19 kapsamında alınan kurallara uymalıdır.",
+      "Etkinlik girişinde bilet kontrolü yapılacaktır, biletinizi telefondan göstermeniz gerekmektedir."
+    ],
+    "description": "Güzel bir müzik gecesi Mask Beach sahnesinde sizi bekliyor."
+  },
+  {
+    "id": 7,
+    "name": "Dolu Kadehi Ters Tut",
+    "artist": ["Uğurhan Özay", "Mürsel Oğulcan Ava"],
+    "category": "Müzik",
+    "location": "KüçükÇiftlik Park",
+    "price": {
+      "A": 100,
+      "B": 75,
+      "C": 50,
+      "D": 25
+    },
+    "images": [
+      "https://isbh.tmgrup.com.tr/sbh/2016/09/03/650x344/1472931590836.jpg",
+      "https://cdnuploads.aa.com.tr/uploads/Contents/2019/08/13/thumbs_b_c_faf1a87413d02af07d9cdfaba7a2d1fe.jpg"
+    ],
+    "date": "25.06.2022",
+    "time": "21.00",
+    "details": [
+      "8 yaşından küçükler giremez, büyükler bilete tabidir.",
+      " Katılımcılar/izleyiciler COVID-19 kapsamında alınan kurallara uymalıdır.",
+      "Etkinlik girişinde bilet kontrolü yapılacaktır, biletinizi telefondan göstermeniz gerekmektedir."
+    ],
+    "description": "ALTERNATİF MÜZİĞİN SEVİLEN İKİLİSİ DOLU KADEHİ TERS TUT, 25 HAZİRAN’DA KÜÇÜKÇİFTLİK PARK’TA!"
+  },
+  {
+    "id": 8,
+    "name": "Amadeus",
+    "artist": ["Selçuk Yöntem", "Okan Bayülgen", "Özlem Öçalmaz"],
+    "category": "Tiyatro",
+    "location": "Zorlu PSM - Turkcell Sahnesi",
+    "price": {
+      "A": 100,
+      "B": 75,
+      "C": 50,
+      "D": 25
+    },
+    "images": [
+      "https://isbh.tmgrup.com.tr/sbh/2016/09/03/650x344/1472931590836.jpg",
+      "https://cdnuploads.aa.com.tr/uploads/Contents/2019/08/13/thumbs_b_c_faf1a87413d02af07d9cdfaba7a2d1fe.jpg"
+    ],
+    "date": "25.06.2022",
+    "time": "21.00",
+    "details": [
+      " Zorlu PSM girişlerinde ağız ve burnu kapatacak şekilde maske kullanılması zorunludur. ",
+      " Kültür ve Turizm Bakanlığı’nın bildirisi uyarınca tiyatro etkinlikleri tam kapasiteye geçmiştir. Etkinlik tam kapasite düzeninde gerçekleşecektir. "
+    ],
+    "description": "Peter Shaffer tarafından kaleme alınan, dünya müzik tarihinin unutulmaz bestecileri Wolfgang Amadeus Mozart ile Antonio Salieri'nin eşsiz hikayesi AMADEUS sahnede!"
+  },
+  {
+    "id": 9,
+    "name": "Hamlet",
+    "artist": ["Selçuk Yöntem", "Okan Bayülgen", "Özlem Öçalmaz"],
+    "category": "Tiyatro",
+    "location": "Zorlu PSM - Turkcell Sahnesi",
+    "price": {
+      "A": 100,
+      "B": 75,
+      "C": 50,
+      "D": 25
+    },
+    "images": [
+      "https://isbh.tmgrup.com.tr/sbh/2016/09/03/650x344/1472931590836.jpg",
+      "https://cdnuploads.aa.com.tr/uploads/Contents/2019/08/13/thumbs_b_c_faf1a87413d02af07d9cdfaba7a2d1fe.jpg"
+    ],
+    "date": "25.06.2022",
+    "time": "21.00",
+    "details": [
+      " Zorlu PSM girişlerinde ağız ve burnu kapatacak şekilde maske kullanılması zorunludur. ",
+      " Kültür ve Turizm Bakanlığı’nın bildirisi uyarınca tiyatro etkinlikleri tam kapasiteye geçmiştir. Etkinlik tam kapasite düzeninde gerçekleşecektir. "
+    ],
+    "description": "Peter Shaffer tarafından kaleme alınan, dünya müzik tarihinin unutulmaz bestecileri Wolfgang Amadeus Mozart ile Antonio Salieri'nin eşsiz hikayesi AMADEUS sahnede!"
+  }
+]
