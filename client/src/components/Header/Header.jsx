@@ -13,6 +13,7 @@ import "./header.css";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { format } from "date-fns";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [openDate, setOpenDate] = useState(false);
@@ -28,22 +29,23 @@ const Header = () => {
     <div className="header">
       <div className="headerContainer">
         <div className="headerList">
-          <div className="headerListItem active">
+          <Link to="/muzik" className="headerListItem active">
             <FontAwesomeIcon icon={faMusic} />
             <span>Müzik</span>
-          </div>
-          <div className="headerListItem">
+          </Link>
+
+          <Link to="/tiyatro" className="headerListItem">
             <FontAwesomeIcon icon={faMasksTheater} />
             <span>Tiyatro</span>
-          </div>
-          <div className="headerListItem">
+          </Link>
+          <Link to="/spor" className="headerListItem">
             <FontAwesomeIcon icon={faFutbolBall} />
             <span>Spor</span>
-          </div>
-          <div className="headerListItem">
+          </Link>
+          <Link to="/resim" className="headerListItem">
             <FontAwesomeIcon icon={faPalette} />
             <span>Resim</span>
-          </div>
+          </Link>
         </div>
         <h1 className="headerTitle">
           Yakınındaki etkinliklerden habersiz kalma
