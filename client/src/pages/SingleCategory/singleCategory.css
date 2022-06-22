@@ -52,6 +52,8 @@
 .singleCategoryName {
   cursor: pointer;
   font-weight: bold;
+  text-decoration: none;
+  color: inherit;
 }
 
 .singleCategoryName:hover {
