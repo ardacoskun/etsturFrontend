@@ -63,7 +63,7 @@ const SingleCategory = () => {
                 >
                   {item.location}
                 </Link>
-                <div className="singleCategoryDate">{item.date}</div>
+                <div className="singleCategoryDate">{item.startDate}</div>
               </div>
             ))}
           </div>

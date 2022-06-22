@@ -71,8 +71,21 @@ const EventPage = () => {
                     {filteredData[0].location}
                   </Link>
                   <div className="eventPageDateContainer">
-                    <div className="eventPageDate"> {filteredData[0].date}</div>
-                    <div className="eventPageTime"> {filteredData[0].time}</div>
+                    <div className="eventPageDate">
+                      {" "}
+                      {filteredData[0].startDate}
+                    </div>
+                    {filteredData[0].time !== "" ? (
+                      <div className="eventPageTime">
+                        {" "}
+                        {filteredData[0].time}
+                      </div>
+                    ) : (
+                      <div className="eventPageTime">
+                        {" "}
+                        {filteredData[0].endDate}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

@@ -1,36 +1,33 @@
-import React, { useState, useEffect } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
-import "./searchPage.css";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { Footer, Header, Navbar } from "../../components";
+import "./pastEvents.css";
 
-const SearchPage = () => {
-  const { keyword } = useParams();
+const PastEvents = () => {
+  const { startDate, endDate } = useParams();
   const [filteredData, setFilteredData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const navigate = useNavigate();
+
+  let currentTime = new Date().getTime();
 
   useEffect(() => {
     const getData = async () => {
       try {
         setLoading(true);
         const { data } = await axios.get("/events.json");
-        const filtered = await data.filter(
-          (item) =>
-            item.location.toLowerCase().includes(keyword.toLowerCase()) ||
-            item.name.toLowerCase().includes(keyword.toLowerCase())
-        );
-
+        const filtered = data.filter((item) => item.endDateTime < currentTime);
         setFilteredData(filtered);
+        console.log(filtered);
         setLoading(false);
       } catch (error) {
-        setError("Bir hata oluştu! Lütfen daha sonra tekrar deneyin.");
+        setError("Bir hata oluştu! Lütfen daha sonra tekrar deneyin");
       }
     };
-
     getData();
-  }, [keyword]);
+  }, [startDate, endDate]);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -40,29 +37,34 @@ const SearchPage = () => {
     <>
       <Navbar />
       <Header />
-      <div className="searchPage">
-        <div className="searchPageContainer">
-          <div className="searchPageText">{`"${keyword}" için ${filteredData.length} sonuç bulundu.`}</div>
-          <div className="searchPageListContainer">
+      <div className="pastEvents">
+        <div className="pastEventsContainer">
+          <div className="pastEventsText">{`${filteredData.length} sonuç bulundu.`}</div>
+          <div className="pastEventsListContainer">
             {filteredData.map((item, index) => (
-              <div className="searchPageEventContainer" key={index}>
+              <div className="pastEventsEventContainer" key={index}>
                 <img
                   src={item.images[0]}
                   alt={item.name}
-                  className="searchPageImg"
+                  className="pastEventsImg"
                   onClick={() =>
                     navigate(`/${item.category.toLowerCase()}/${item.id}`)
                   }
                 />
                 <Link
                   to={`/${item.category.toLowerCase()}/${item.id}`}
-                  className="searchPageName"
+                  className="pastEventsName"
                 >
                   {item.name}
                 </Link>
 
-                <div className="searchPagePlace">{item.location}</div>
-                <div className="searchPageDate">{item.startDate}</div>
+                <Link
+                  to={`/arama/${item.location}`}
+                  className="pastEventsPlace"
+                >
+                  {item.location}
+                </Link>
+                <div className="pastEventsDate">{item.startDate}</div>
               </div>
             ))}
           </div>
@@ -73,4 +75,4 @@ const SearchPage = () => {
   );
 };
 
-export default SearchPage;
+export default PastEvents;

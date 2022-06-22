@@ -13,9 +13,10 @@ import "./header.css";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { format } from "date-fns";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = ({ type }) => {
+  const navigate = useNavigate();
   const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState([
     {
@@ -25,11 +26,18 @@ const Header = ({ type }) => {
     },
   ]);
 
+  let startEvent = date[0].startDate.getTime();
+  let endEvent = date[0].startDate.getTime();
+
+  const handleClick = () => {
+    navigate(`/etkinlik-bul/${startEvent}/${endEvent}`);
+  };
+
   return (
     <div className="header">
       <div className={`headerContainer ${type === "home" && "headerHome"}`}>
         <div className="headerList">
-          <Link to="/muzik" className="headerListItem active">
+          <Link to="/müzik" className="headerListItem active">
             <FontAwesomeIcon icon={faMusic} />
             <span>Müzik</span>
           </Link>
@@ -45,6 +53,13 @@ const Header = ({ type }) => {
           <Link to="/resim" className="headerListItem">
             <FontAwesomeIcon icon={faPalette} />
             <span>Resim</span>
+          </Link>
+          <Link
+            to={`/gecmis-etkinlikler/${endEvent}`}
+            className="headerListItem"
+          >
+            <FontAwesomeIcon icon={faPalette} />
+            <span>Geçmiş Etkinlikler</span>
           </Link>
         </div>
         {type && type === "home" && (
@@ -85,7 +100,9 @@ const Header = ({ type }) => {
                 )}
               </div>
               <div className="headerSearchItem">
-                <button className="headerSearchBtn">Etkinlik Bul</button>
+                <button className="headerSearchBtn" onClick={handleClick}>
+                  Etkinlik Bul
+                </button>
               </div>
             </div>
           </>

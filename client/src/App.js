@@ -1,6 +1,12 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { EventPage, Home, SearchPage, SingleCategory } from "./pages";
+import {
+  EventPage,
+  Home,
+  PastEvents,
+  SearchPage,
+  SingleCategory,
+} from "./pages";
 
 const App = () => {
   return (
@@ -10,6 +16,10 @@ const App = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="/:categoryName" element={<SingleCategory />} />
         <Route path="/:categoryName/:id" element={<EventPage />} />
+        <Route
+          path="/gecmis-etkinlikler/:endDateTime"
+          element={<PastEvents />}
+        />
       </Routes>
     </BrowserRouter>
   );
